@@ -18,3 +18,20 @@ terraform state rm コード上のリソース名
 
 現在のAWS上の設定値にtfstateを修正する　コードには反映されない
 aws refresh
+
+
+
+----------------------------------------------
+tfenv list-remote
+利用可能なterraformのバージョン
+
+tfenv install <バージョン>
+teraformのインストール
+
+tfenv list
+インストール済みのterraformの確認
+
+tfenv use <バージョン>
+使用するバージョンの指定
+
+

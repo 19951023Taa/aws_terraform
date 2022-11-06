@@ -9,6 +9,12 @@ terraform {
       version = "~>3.0"
     }
   }
+  backend "s3" {
+    bucket  = "takamasa-terraform"
+    key     = "tastylog-dev.tfstate"
+    region  = "ap-northeast-1"
+    profile = "terraform_takamasa2"
+  }
 }
 
 #---------------------------------------------
