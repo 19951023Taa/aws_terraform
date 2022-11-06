@@ -35,3 +35,7 @@ variable "project" {
 variable "enviroment" {
   type = string
 }
+
+variable "dbpass" {
+  type = string
+}
