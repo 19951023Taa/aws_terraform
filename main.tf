@@ -39,3 +39,7 @@ variable "enviroment" {
 variable "dbpass" {
   type = string
 }
+
+variable "domain" {
+  type = string
+}
