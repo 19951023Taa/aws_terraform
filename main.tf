@@ -25,6 +25,12 @@ provider "aws" {
   region  = "ap-northeast-1"
 }
 
+provider "aws" {
+  alias = "virginia"
+  profile = "terraform_takamasa2"
+  region  = "us-east-1"
+}
+
 #---------------------------------------------
 # Variables
 #---------------------------------------------
