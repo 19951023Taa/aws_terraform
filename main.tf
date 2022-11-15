@@ -26,7 +26,7 @@ provider "aws" {
 }
 
 provider "aws" {
-  alias = "virginia"
+  alias   = "virginia"
   profile = "terraform_takamasa2"
   region  = "us-east-1"
 }
