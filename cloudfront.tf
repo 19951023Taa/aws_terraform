@@ -30,6 +30,7 @@ resource "aws_cloudfront_distribution" "cf" {
     }
   }
 
+###### default ######
   default_cache_behavior {
     allowed_methods = ["GET", "HEAD"]
     cached_methods  = ["GET", "HEAD"]
@@ -49,6 +50,7 @@ resource "aws_cloudfront_distribution" "cf" {
     max_ttl                = 0
   }
 
+###### ordered_cache ######
   ordered_cache_behavior {
     path_pattern     = "/public/*"
     allowed_methods  = ["GET", "HEAD"]
